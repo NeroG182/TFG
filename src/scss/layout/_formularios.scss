@@ -1,0 +1,74 @@
+.formulario {
+    p {
+        font-size: 1.4rem;
+        color: $grisOscuro;
+        padding: 2rem 0 0 0;
+        width: 100%;
+          
+    }
+
+    legend {
+        font-style: 2rem;
+        color: $grisOscuro;
+    }
+
+    label {
+        font-weight: $bold;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    /** Afecta a todos menos al de tipo submit **/
+    input:not([type="submit"],[type="radio"]),
+    textarea,
+    select {
+        padding: 1rem;
+        display: block;
+        background-color: $blanco;
+        border: 1px solid $gris;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .forma-contacto {
+        max-width:20rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .form-fecha-hora {
+        display: flex;
+        align-items: center;
+        @media (max-width: 500px) {
+            flex-direction: column;
+            justify-content: center;
+
+            .input-fecha-hora {
+                margin: 0;
+            }
+        }
+        
+    }
+
+    .input-fecha-hora {
+        margin: 2rem 5rem 2rem 1rem;
+    }
+
+    label + input[type="radio"] {
+        margin: 0;
+        width: auto;
+
+    }
+
+    #email {
+        width: 25rem;
+    }
+
+    textarea {
+        width: 100%;
+        height: 20rem;
+    }
+}
+

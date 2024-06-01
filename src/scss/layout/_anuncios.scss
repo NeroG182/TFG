@@ -1,0 +1,70 @@
+@include tablet {
+    .contenedor-anuncios {
+        @include grid(3, 2rem);
+    }
+    
+}
+
+.anuncio {
+    background-color: lighten($gris, 5);
+    border: 2px solid lighten($grisOscuro, 50);
+    text-align: center;    
+
+    .contenido-anuncio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    h3, p {
+        margin: 0;
+    }
+
+}
+
+
+.precio {
+    color: $verde;
+    font-weight: $bold;
+    font-size: 3rem;
+}
+
+.iconos-caracteristicas {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+
+        img {
+            flex: 0 0 3rem;
+            margin-right: 1rem;
+        }
+
+        p {
+            font-weight: $black;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.iconos-caracteristicas-anuncio {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+
+    @include tablet {
+        grid-template-columns: 12rem 12rem 12rem;
+        
+    }
+    
+    
+}
+
+

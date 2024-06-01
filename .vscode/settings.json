@@ -1,0 +1,20 @@
+{
+    "liveSassCompile.settings.includeItems": [
+        
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/build/css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveSassCompile.settings.forceBaseDirectory": "",
+    "liveSassCompile.settings.useNewCompiler": false,
+    "liveSassCompile.settings.rootIsWorkspace": false,
+    "liveSassCompile.settings.partialsList": [
+        "/**/_*.s[ac]ss",
+        "/src/scss"
+    ]
+}
