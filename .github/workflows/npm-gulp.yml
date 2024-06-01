@@ -14,11 +14,8 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install dependencies
-      run: npm install
-
-    - name: Compile Sass
-      run: npm run sass
-
+      run: npm 
+      
     - name: Build assets with Gulp
       run: npm run build
           # Ajusta el comando según tu script de construcción en gulpfile.js
