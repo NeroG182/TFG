@@ -1,0 +1,31 @@
+name: Deploy with npm and Gulp
+
+on:
+  push:
+    branches:
+      - main  # Cambiar según la rama que desees
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build assets with Gulp
+      run: npm run build  # Ajusta el comando según tu script de construcción en gulpfile.js
+
+    # Agrega pasos adicionales según sea necesario para tu flujo de despliegue
+    # Por ejemplo, puedes implementar un despliegue a un servidor o a GitHub Pages
+
+    # Aquí hay un ejemplo básico de cómo implementar a GitHub Pages:
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.3
+      with:
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages  # Cambiar según la rama a la que desees implementar
+        FOLDER: build  # Carpeta que contiene los archivos a desplegar
