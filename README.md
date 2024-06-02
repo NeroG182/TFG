@@ -17,37 +17,37 @@ Estructura del Proyecto
 src/
 ├── img/
 ├── js/
-│   ├── app.js
-│   └── modernizr.js
+│ ├── app.js
+│ └── modernizr.js
 ├── scss/
-│   ├── base/
-│   │   ├── _botones.scss
-│   │   ├── _globales.scss
-│   │   ├── _mixins.scss
-│   │   ├── _normalize.scss
-│   │   ├── _utilidades.scss
-│   │   └── _variables.scss
-│   ├── internas/
-│   │   └── _nosotros.scss
-│   ├── layout/
-│   │   ├── _anuncios.scss
-│   │   ├── _contactar.scss
-│   │   ├── _footer.scss
-│   │   ├── _formularios.scss
-│   │   ├── _header.scss
-│   │   ├── _iconos.scss
-│   │   ├── _inferior.scss
-│   │   ├── _navegacion.scss
-│   │   └── _testimonios.scss
-│   ├── app.scss
-│   └── app.css
+│ ├── base/
+│ │ ├── _botones.scss
+│ │ ├── _globales.scss
+│ │ ├── _mixins.scss
+│ │ ├── _normalize.scss
+│ │ ├── _utilidades.scss
+│ │ └── _variables.scss
+│ ├── internas/
+│ │ └── _nosotros.scss
+│ ├── layout/
+│ │ ├── _anuncios.scss
+│ │ ├── _contactar.scss
+│ │ ├── _footer.scss
+│ │ ├── _formularios.scss
+│ │ ├── _header.scss
+│ │ ├── _iconos.scss
+│ │ ├── _inferior.scss
+│ │ ├── _navegacion.scss
+│ │ └── _testimonios.scss
+│ ├── app.scss
+│ └── app.css
 build/
 ├── css/
-│   ├── app.css
-│   └── app.css.map
+│ ├── app.css
+│ └── app.css.map
 ├── img/
 ├── js/
-│   └── bundle.min.js
+│ └── bundle.min.js
 .gitattributes
 anuncio.html
 anuncios.html
