@@ -14,8 +14,6 @@ Tecnologías Utilizadas
 
 Estructura del Proyecto
 
-css
-
 src/
 ├── img/
 ├── js/
@@ -61,6 +59,7 @@ index.html
 nosotros.html
 gulpfile.js
 netlify.toml
+
 
 Implementación
 HTML
